@@ -1,0 +1,40 @@
+# Plugin configuration
+plugin.tx_eahstellenticket_jsontoelement {
+	view {
+		templateRootPaths {
+			0 = EXT:eahstellenticket/Resources/Private/Templates/
+			1 = {$plugin.tx_eahstellenticket_jsontoelement.view.templateRootPath}
+		}
+		partialRootPaths {
+			0 = EXT:eahstellenticket/Resources/Private/Partials/
+			1 = {$plugin.tx_eahstellenticket_jsontoelement.view.partialRootPath}
+		}
+		layoutRootPaths {
+			0 = EXT:eahstellenticket/Resources/Private/Layouts/
+			1 = {$plugin.tx_eahstellenticket_jsontoelement.view.layoutRootPath}
+		}
+	}
+
+	persistence {
+		//storagePid = {$plugin.tx_eahstellenticket_jsontoelement.persistence.storagePid}
+		// recursive = 1
+	}
+
+	features {
+		skipDefaultArguments = 1
+		# if set to 1, the enable fields are ignored in BE context
+		ignoreAllEnableFieldsInBe = 0
+		# Should be on by default, but can be disabled if all action in the plugin are uncached
+		//requireCHashArgumentForActionArguments = 0
+	}
+
+	mvc {
+		callDefaultActionIfActionCantBeResolved = 1
+	}
+
+	# ====================================
+	# Settings available inside Controller and View by accessing $this->settings or {settings.xyz}
+	# ====================================
+	settings {
+	}
+}

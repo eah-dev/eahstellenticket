@@ -1,0 +1,16 @@
+plugin.tx_eahstellenticket_jsontoelement {
+	view {
+		# cat=module.tx_eahstellenticket_jsontoelement/file; type=string; label=Path to template root (BE)
+		templateRootPath =
+		# cat=module.tx_eahstellenticket_jsontoelement/file; type=string; label=Path to template partials (BE)
+		partialRootPath =
+		# cat=module.tx_eahstellenticket_jsontoelement/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath =
+	}
+
+	persistence {
+	}
+
+	settings {
+	}
+}

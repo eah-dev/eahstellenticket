@@ -1,0 +1,109 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.tab.setting</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.Url>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.url</label>
+							<config>
+								<type>input</type>
+								<size>100</size>
+								<max>400</max>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.Url>
+
+					<!-- enable showeahjprof -->
+					<settings.showeahjprof>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.show.eahj_prof</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showeahjprof>
+
+					<!-- enable showeahjwiss -->
+					<settings.showeahjwiss>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.show.eahj_wiss</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showeahjwiss>
+
+					<!-- enable showeahjverw -->
+					<settings.showeahjverw>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.show.eahj_verwalt</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showeahjverw>
+
+					<!-- enable showeahjausb -->
+					<settings.showeahjausb>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.show.eahj_ausb</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showeahjausb>
+				</el>
+			</ROOT>
+		</sDEF>
+		<!--
+		################################
+			SHEET Template
+		################################
+		-->
+		<template>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexform.tab.template</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<!-- Template Layout - List -->
+					<settings.templateLayoutList>
+						<TCEforms>
+							<label>LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexforms_template.selectlayout_list</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexforms_template.selectlayout_list.style1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:flexforms_template.selectlayout_list.style2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.templateLayoutList>
+
+				</el>
+			</ROOT>
+		</template>
+	</sheets>
+</T3DataStructure>

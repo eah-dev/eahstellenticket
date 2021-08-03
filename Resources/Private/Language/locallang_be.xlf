@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-02-25T10:00:17Z" product-name="eahstellenticket">
+		<header/>
+		<body>
+			<trans-unit id="flexform.tab.setting">
+				<source>Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="flexform.tab.template">
+				<source>Vorlage</source>
+			</trans-unit>
+			<trans-unit id="flexform.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="flexform.show.eahj_prof">
+				<source>zeige eahj_prof mit an</source>
+			</trans-unit>
+			<trans-unit id="flexform.show.eahj_wiss">
+				<source>zeige eahj_wiss mit an</source>
+			</trans-unit>
+			<trans-unit id="flexform.show.eahj_verwalt">
+				<source>zeige eahj_verwalt mit an</source>
+			</trans-unit>
+			<trans-unit id="flexform.show.eahj_ausb">
+				<source>zeige eahj_ausb mit an</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_template.selectlayout_list">
+				<source>Templatevorlage für die Listenansicht</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.selectlayout_list.style1">
+				<source>style 1 - default</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.selectlayout_list.style2">
+				<source>style 2</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

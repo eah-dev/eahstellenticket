@@ -1,0 +1,21 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod {
+    wizards.newContentElement.wizardItems {
+        plugins {
+            elements {
+                jsontoelement {
+                    iconIdentifier = plugin-jsontoelement
+                    title = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:jsontoelement.title
+                    description = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:jsontoelement.description
+                    tt_content_defValues {
+                        CType = list
+                        list_type = eahstellenticket_jsontoelement
+                    }
+                }
+            }
+            show = *
+        }
+    }
+}

@@ -1,0 +1,119 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <f:flashMessages />
+
+    <f:if condition="{offersdata}">
+        <f:then>
+            <f:if condition="{settings.themestyle.header.style} == 1">
+                <f:then>
+                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                        <f:for each="{offersdata}" as="data" key="itemkey">
+                            <f:render section="ItemAccordion" arguments="{_all}"/>
+                        </f:for>
+                    </div>
+                </f:then>
+                <f:else if="{settings.themestyle.header.style} == 2">
+                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                        <f:for each="{offersdata}" as="data" key="itemkey">
+                            <f:render section="ItemAccordion" arguments="{_all}"/>
+                        </f:for>
+                    </div>
+                </f:else>
+                <f:else>
+                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                        <f:for each="{offersdata}" as="data" key="itemkey">
+                            <f:render section="ItemAccordion" arguments="{_all}"/>
+                        </f:for>
+                    </div>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <span class="error_noentryfound">
+                <f:translate
+                    key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:no_entry_found" />
+            </span>
+        </f:else>
+    </f:if>
+
+</f:section>
+
+<f:section name="ItemAccordion">
+    <div class="accordion-item card">
+        <div class="accordion-header card-header" id="accordion-heading-{contentObjectData.uid}-{itemkey}">
+            <h4 class="accordion-title">
+                <a href="#accordion-{contentObjectData.uid}-{itemkey}"
+                    class="accordion-title-link{f:if(condition: '{activeElement} == {itemkey}', else:' collapsed')}"
+                    data-toggle="collapse"
+                    data-parent="#accordion-{contentObjectData.uid}"
+                    aria-expanded="{f:if(condition: '{activeElement} == {itemkey}', then: 'true', else: 'false')}"
+                    aria-controls="accordion-{contentObjectData.uid}-{itemkey}">
+                    <span class="accordion-title-link-text">
+                        <f:translate
+                            key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:{itemkey}.label" />
+                    </span>
+                    <span class="accordion-title-link-state"></span>
+                </a>
+            </h4>
+        </div>
+        <div
+            id="accordion-{contentObjectData.uid}-{itemkey}"
+            class="accordion-collapse collapse{f:if(condition: '{activeElement} == {itemkey}', then: ' show')}"
+            aria-labelledby="accordion-heading-{contentObjectData.uid}-{itemkey}"
+            data-parent="#accordion-{contentObjectData.uid}">
+            <div class="accordion-body card-body">
+                <div class="accordion-content">
+                    <div class="accordion-content-item accordion-content-text">
+                        <f:for each="{data}" as="offers">
+                            <f:if condition="{offers}">
+                                <f:then>
+                                    <f:for each="{offers}" as="offer">
+                                        <f:render section="ItemContent" arguments="{offer: offer}"/>
+                                    </f:for>
+                                </f:then>
+                                <f:else>
+                                    <f:translate
+                                        key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:{itemkey}.no_entry_found.label" />
+                                </f:else>
+                            </f:if>
+                        </f:for>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="ItemContent">
+    <div class="offer card mb-2">
+        <div class="card-body">
+            <div class="offer-title">
+                <f:link.external
+                    uri="{offer.links.portal}"
+                    target="_blank">
+                    {offer.attributes.heading}
+                </f:link.external>
+            </div>
+            <div class="offer-meta">
+                <span>
+                    <f:translate
+                        key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:appli_ref_number" />
+                    {offer.attributes.appli_ref_number}
+                </span>
+                -
+                <span>
+                    <f:translate
+                        key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:appli_deadline" />
+                    <f:format.date format="%d.%m.%Y">{offer.attributes.appli_deadline}</f:format.date>
+                </span>
+            </div>
+        </div>
+    </div>
+</f:section>
+
+</html>
+
