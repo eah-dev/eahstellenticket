@@ -11,7 +11,7 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'EAHJena Legislative Database',
+    'title' => 'EAHJena stellenticket',
     'description' => 'This package read a json file from stellenticket',
     'category' => 'plugin',
     'constraints' => [
