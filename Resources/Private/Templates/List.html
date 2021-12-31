@@ -43,29 +43,27 @@
 </f:section>
 
 <f:section name="ItemAccordion">
-    <div class="accordion-item card">
-        <div class="accordion-header card-header" id="accordion-heading-{contentObjectData.uid}-{itemkey}">
-            <h4 class="accordion-title">
-                <a href="#accordion-{contentObjectData.uid}-{itemkey}"
-                    class="accordion-title-link{f:if(condition: '{activeElement} == {itemkey}', else:' collapsed')}"
-                    data-toggle="collapse"
-                    data-parent="#accordion-{contentObjectData.uid}"
+    <div class="accordion-item">
+        <div class="accordion-header" id="accordion-heading-{contentObjectData.uid}-{itemkey}">
+            <div class="accordion-title">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion-{contentObjectData.uid}-{itemkey}"
                     aria-expanded="{f:if(condition: '{activeElement} == {itemkey}', then: 'true', else: 'false')}"
                     aria-controls="accordion-{contentObjectData.uid}-{itemkey}">
-                    <span class="accordion-title-link-text">
-                        <f:translate
-                            key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:{itemkey}.label" />
-                    </span>
-                    <span class="accordion-title-link-state"></span>
-                </a>
-            </h4>
+                    <f:translate
+                        key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:{itemkey}.label" />
+                </button>
+            </div>
         </div>
         <div
             id="accordion-{contentObjectData.uid}-{itemkey}"
             class="accordion-collapse collapse{f:if(condition: '{activeElement} == {itemkey}', then: ' show')}"
             aria-labelledby="accordion-heading-{contentObjectData.uid}-{itemkey}"
-            data-parent="#accordion-{contentObjectData.uid}">
-            <div class="accordion-body card-body">
+            data-bs-parent="#accordion-{contentObjectData.uid}">
+            <div class="accordion-body">
                 <div class="accordion-content">
                     <div class="accordion-content-item accordion-content-text">
                         <f:for each="{data}" as="offers">
