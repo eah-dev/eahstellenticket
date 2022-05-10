@@ -26,30 +26,29 @@
             </trans-unit>
 
             <trans-unit id="eahj_prof.label" xml:space="preserve">
-                <source>Professuren</source>
+                <source>Professorships</source>
             </trans-unit>
             <trans-unit id="eahj_prof.no_entry_found.label" xml:space="preserve">
-                <source>Derzeit sind keine Stellen für Professuren ausgeschrieben.</source>
+                <source>There are currently no vacancies in this area.</source>
             </trans-unit>
             <trans-unit id="eahj_wiss.label" xml:space="preserve">
-                <source>Wissenschaftliches Personal</source>
+                <source>Scientific staff</source>
             </trans-unit>
             <trans-unit id="eahj_wiss.no_entry_found.label" xml:space="preserve">
-                <source>Derzeit sind keine Stellen für Wissenschaftliches Personal ausgeschrieben.</source>
+                <source>There are currently no vacancies in this area.</source>
             </trans-unit>
             <trans-unit id="eahj_verwalt.label" xml:space="preserve">
-                <source>Personal in Verwaltung und Technik</source>
+                <source>Adminsitrative and technical staff</source>
             </trans-unit>
             <trans-unit id="eahj_verwalt.no_entry_found.label" xml:space="preserve">
-                <source>Derzeit sind keine Stellen für Personal in Verwaltung und Technik ausgeschrieben.</source>
+                <source>There are currently no vacancies in this area.</source>
             </trans-unit>
             <trans-unit id="eahj_ausb.label" xml:space="preserve">
-                <source>Ausbildungsplätze</source>
+                <source>Apprenticeships</source>
             </trans-unit>
             <trans-unit id="eahj_ausb.no_entry_found.label" xml:space="preserve">
-                <source>Derzeit sind keine Stellen für Ausbildungsplätze ausgeschrieben.</source>
+                <source>There are currently no vacancies in this area.</source>
             </trans-unit>
 		</body>
 	</file>
 </xliff>
-
