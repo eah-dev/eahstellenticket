@@ -12,10 +12,10 @@
             <trans-unit id="readmore">
                 <source>Read more</source>
             </trans-unit>
-            <trans-unit id="no_entry_found" xml:space="preserve">
+            <trans-unit id="no_entry_found">
                 <source>no entry found</source>
             </trans-unit>
-            <trans-unit id="pdf.link" xml:space="preserve">
+            <trans-unit id="pdf.link">
                 <source>Link</source>
             </trans-unit>
             <trans-unit id="appli_ref_number">
@@ -25,28 +25,28 @@
                 <source>deadline:</source>
             </trans-unit>
 
-            <trans-unit id="eahj_prof.label" xml:space="preserve">
+            <trans-unit id="eahj_prof.label">
                 <source>Professorships</source>
             </trans-unit>
-            <trans-unit id="eahj_prof.no_entry_found.label" xml:space="preserve">
+            <trans-unit id="eahj_prof.no_entry_found.label">
                 <source>There are currently no vacancies in this area.</source>
             </trans-unit>
-            <trans-unit id="eahj_wiss.label" xml:space="preserve">
+            <trans-unit id="eahj_wiss.label">
                 <source>Scientific staff</source>
             </trans-unit>
-            <trans-unit id="eahj_wiss.no_entry_found.label" xml:space="preserve">
+            <trans-unit id="eahj_wiss.no_entry_found.label">
                 <source>There are currently no vacancies in this area.</source>
             </trans-unit>
-            <trans-unit id="eahj_verwalt.label" xml:space="preserve">
+            <trans-unit id="eahj_verwalt.label">
                 <source>Adminsitrative and technical staff</source>
             </trans-unit>
-            <trans-unit id="eahj_verwalt.no_entry_found.label" xml:space="preserve">
+            <trans-unit id="eahj_verwalt.no_entry_found.label">
                 <source>There are currently no vacancies in this area.</source>
             </trans-unit>
-            <trans-unit id="eahj_ausb.label" xml:space="preserve">
+            <trans-unit id="eahj_ausb.label">
                 <source>Apprenticeships</source>
             </trans-unit>
-            <trans-unit id="eahj_ausb.no_entry_found.label" xml:space="preserve">
+            <trans-unit id="eahj_ausb.no_entry_found.label">
                 <source>There are currently no vacancies in this area.</source>
             </trans-unit>
 		</body>

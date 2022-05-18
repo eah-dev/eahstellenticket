@@ -24,6 +24,31 @@
             <trans-unit id="appli_deadline">
                 <target>Bewerbungsende:</target>
             </trans-unit>
+
+            <trans-unit id="eahj_prof.label">
+                <target>Professuren</target>
+            </trans-unit>
+            <trans-unit id="eahj_prof.no_entry_found.label">
+                <target>Derzeit sind keine Stellen für Professuren ausgeschrieben.</target>
+            </trans-unit>
+            <trans-unit id="eahj_wiss.label">
+                <target>Wissenschaftliches Personal</target>
+            </trans-unit>
+            <trans-unit id="eahj_wiss.no_entry_found.label">
+                <target>Derzeit sind keine Stellen für Wissenschaftliches Personal ausgeschrieben.</target>
+            </trans-unit>
+            <trans-unit id="eahj_verwalt.label">
+                <target>Personal in Verwaltung und Technik</target>
+            </trans-unit>
+            <trans-unit id="eahj_verwalt.no_entry_found.label">
+                <target>Derzeit sind keine Stellen für Personal in Verwaltung und Technik ausgeschrieben.</target>
+            </trans-unit>
+            <trans-unit id="eahj_ausb.label">
+                <target>Ausbildungsplätze</target>
+            </trans-unit>
+            <trans-unit id="eahj_ausb.no_entry_found.label">
+                <target>Derzeit sind keine Stellen für Ausbildungsplätze ausgeschrieben.</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
