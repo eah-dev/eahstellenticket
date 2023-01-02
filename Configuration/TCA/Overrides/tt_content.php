@@ -1,4 +1,5 @@
 <?php
+defined('TYPO3_MODE') or die();
 
 /*
  * This file is part of the package ErnstAbbeHochschuleJena/Eahstellenticket.
@@ -10,20 +11,17 @@
  *
  */
 
-defined('TYPO3_MODE') or die();
-
 /***************
  * Plugin
  */
 
- $VendorName = 'ErnstAbbeHochschuleJena';
- $extension_key = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase('eahstellenticket'));
+$extension_key = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase('eahstellenticket'));
 
- \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-     $VendorName . '.' . $extension_key,
-     'jsontoelement',
-     'LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:jsontoelement.title'
- );
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    $extension_key,
+    'jsontoelement',
+    'LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:jsontoelement.title'
+);
 
 /*** Flexform *****/
 

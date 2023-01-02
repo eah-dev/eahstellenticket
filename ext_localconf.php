@@ -9,23 +9,24 @@
  * (c) 2021 Carsten Hölbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
  *
  */
+use ErnstAbbeHochschuleJena\Eahstellenticket\Controller\StellenticketController;
 
 defined('TYPO3_MODE') || die('Access denied.');
 
 $boot = function () {
-    $VendorName = 'ErnstAbbeHochschuleJena';
+
     $extension_key = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase('eahstellenticket'));
 
     // Stellenticket
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        $VendorName . '.' . $extension_key,
+        $extension_key,
         'jsontoelement',
         [
-            'Stellenticket' => 'list',
+            StellenticketController::class => 'list',
         ],
         // non-cacheable actions
         [
-            'Stellenticket' => 'list'
+            StellenticketController::class => 'list'
         ]
     );
 
