@@ -3,6 +3,20 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2021-02-25T10:00:17Z" product-name="eahstellenticket">
 		<header/>
 		<body>
+			<trans-unit id="mlang_tabs_tab">
+				<source>EAHJena-Stellenticket</source>
+			</trans-unit>
+			<trans-unit id="customizedEAHElementsHeader">
+				<source>Stellenticket</source>
+			</trans-unit>
+
+			<trans-unit id="jsontoelement.title">
+				<source>Stellenticket</source>
+			</trans-unit>
+			<trans-unit id="jsontoelement.description">
+				<source>es wird ein Akkordeon angezeigt</source>
+			</trans-unit>
+
 			<trans-unit id="flexform.tab.setting">
 				<source>Einstellungen</source>
 			</trans-unit>

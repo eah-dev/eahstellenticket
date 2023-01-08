@@ -3,12 +3,7 @@
 	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2021-02-25T10:00:17Z" product-name="eahstellenticket">
 		<header/>
 		<body>
-			<trans-unit id="jsontoelement.title">
-				<target>eahstellenticket</target>
-			</trans-unit>
-			<trans-unit id="jsontoelement.description">
-				<target>plugin 4 eahstellenticket</target>
-			</trans-unit>
+
             <trans-unit id="readmore">
                 <target>Weiterlesen</target>
             </trans-unit>

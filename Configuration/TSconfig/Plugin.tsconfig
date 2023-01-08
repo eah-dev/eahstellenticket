@@ -1,0 +1,13 @@
+####################
+#### CATEGORIES ####
+####################
+mod.wizards.newContentElement.wizardItems {
+  eahstellenticket {
+    header = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:customizedEAHElementsHeader
+  }
+}
+
+##########################
+#### CONTENT ELEMENTS ####
+##########################
+@import 'EXT:eahstellenticket/Configuration/TSconfig/Plugin/jsontoelement.tsconfig'

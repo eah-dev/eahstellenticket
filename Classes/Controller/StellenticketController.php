@@ -1,12 +1,13 @@
 <?php
+declare(strict_types=1);
 
-/*
- * This file is part of the package ErnstAbbeHochschuleJena/Eahstellenticket.
+/***
+ * This file is part of the "Eahstellenticket" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  *
- * (c) 2021 Carsten Hölbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
+ * (c) 2021 Carsten Hoelbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
  *
  */
 
@@ -51,7 +52,7 @@ class StellenticketController extends ActionController
      *
      * @param \ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository $stellenticketRepository
      */
-    public function injectStellenticketRepository(\ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository $stellenticketRepository)
+    public function injectStellenticketRepository(StellenticketRepository $stellenticketRepository)
     {
         $this->stellenticketRepository = $stellenticketRepository;
     }
@@ -90,7 +91,7 @@ class StellenticketController extends ActionController
         {
             $offersdata['eahj_ausb'] = $this->stellenticketRepository->getDatafromPortalURLAsArray('https://stellenticket.eah-jena.de/de/html/eahj_offers?namespace=eahj_ausb');
         }
-        //$offersdata = $this->stellenticketRepository->getOffersFromPortalAsArray();
+
         $this->view->assign('offersdata', $offersdata);
     }
 }

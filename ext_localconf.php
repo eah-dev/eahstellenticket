@@ -1,17 +1,18 @@
 <?php
+defined('TYPO3_MODE') || die('Access denied.');
 
-/*
- * This file is part of the package ErnstAbbeHochschuleJena/Eahstellenticket.
+/***
+ *
+ * This file is part of the "eahstellenticket" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  *
- * (c) 2021 Carsten Hölbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
+ * (c) 2021 Carsten Hoelbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
  *
  */
-use ErnstAbbeHochschuleJena\Eahstellenticket\Controller\StellenticketController;
 
-defined('TYPO3_MODE') || die('Access denied.');
+use ErnstAbbeHochschuleJena\Eahstellenticket\Controller\StellenticketController;
 
 $boot = function () {
 
