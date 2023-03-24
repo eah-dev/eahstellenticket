@@ -1,30 +1,36 @@
 {
-  "name": "ernst-abbehochschule-jena/eahstellenticket",
+  "name": "ernstabbehochschulejena/eahstellenticket",
   "type": "typo3-cms-extension",
   "description": "This package read a json file from stellenticket.",
+  "homepage": "https://github.com/eah-dev/eahresearchdirectory_indexer",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "eahjena"
+  ],
   "license": "",
   "authors": [
-      {
-          "name": "Carsten Hoelbing",
-          "email": "carsten.hoelbing@eah-jena.de"
-      }
+    {
+      "name": "Carsten Hoelbing",
+      "email": "carsten.hoelbing@eah-jena.de",
+      "role": "Developer"
+    }
   ],
-	"require": {
-		"typo3/cms-core": "^10 || ^11",
-		"php": ">=7.3"
-	},
-  "extra": {
-      "typo3/cms": {
-          "extension-key": "eahstellenticket"
-      }
+  "support": {
+    "issues": "https://github.com/eah-dev/eahstellenticket/issues",
+    "source": "https://github.com/eah-dev/eahstellenticket"
   },
-  "version": "1.0.0",
-	"autoload": {
-		"psr-4": {
-			"ErnstAbbeHochschuleJena\\Eahstellenticket\\": "Classes"
-		}
-	},
-	"replace": {
-		"typo3-ter/eahstellenticket": "self.version"
-	}
+  "require": {
+    "typo3/cms-core": "^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ErnstAbbeHochschuleJena\\Eahstellenticket\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "eahstellenticket"
+    }
+  }
 }
