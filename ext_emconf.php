@@ -17,10 +17,8 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'plugin',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-10.5.99',
-        ],
-        'conflicts' => [
-        ],
+            'typo3' => '10.4.0-11.5.99',
+        ]
     ],
     'autoload' => [
         'psr-4' => [
