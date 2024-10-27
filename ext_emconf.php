@@ -15,6 +15,11 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'EAH Jena - Stellenticket',
     'description' => 'This package read a json file from stellenticket',
     'category' => 'plugin',
+    'author' => 'Carsten Hoelbing',
+    'author_email' => 'carsten.hoelbing@eah-jena.de',
+    'author_company' => 'Ernst-Abbe-Hochschule Jena',
+    'state' => 'beta',
+    'version' => '1.0.2',
     'constraints' => [
         'depends' => [
             'typo3' => '11.5.0-12.4.99',
@@ -25,12 +30,4 @@ $EM_CONF[$_EXTKEY] = [
             'ErnstAbbeHochschuleJena\\Eahstellenticket\\' => 'Classes'
         ],
     ],
-    'state' => 'beta',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearCacheOnLoad' => 1,
-    'author' => 'Carsten Hoelbing',
-    'author_email' => 'carsten.hoelbing@eah-jena.de',
-    'author_company' => 'Ernst-Abbe-Hochschule Jena',
-    'version' => '1.0.1',
 ];
