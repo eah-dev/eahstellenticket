@@ -15,10 +15,9 @@ namespace ErnstAbbeHochschuleJena\Eahstellenticket\Controller;
 
 use ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository;
 
-use TYPO3\CMS\Core\Database\QueryGenerator;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
+//use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
+//use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 
 /**
  * StellenticketController
@@ -31,26 +30,11 @@ class StellenticketController extends ActionController
      * @var StellenticketRepository
      */
     protected $stellenticketRepository = null;
-    /**
-     * queryGenerator
-     *
-     * @var QueryGenerator
-     *
-     */
-    protected $queryGenerator;
-
-    /**
-     * initializeAction
-     */
-    public function initializeAction()
-    {
-        $this->queryGenerator = GeneralUtility::makeInstance(QueryGenerator::class);
-    }
 
     /**
      * Inject a course repository to enable DI
      *
-     * @param \ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository $stellenticketRepository
+     * @param StellenticketRepository $stellenticketRepository
      */
     public function injectStellenticketRepository(StellenticketRepository $stellenticketRepository)
     {
@@ -60,12 +44,11 @@ class StellenticketController extends ActionController
     /**
      * Initializes the view before invoking an action method.
      *
-     * @param ViewInterface $view The view to be initialized
      */
-    protected function initializeView(ViewInterface $view)
+    protected function initializeView($view)
     {
         $view->assign('contentObjectData', $this->configurationManager->getContentObject()->data);
-        parent::initializeView($view);
+        //parent::initializeView($view);
     }
 
     /**
