@@ -15,6 +15,7 @@ namespace ErnstAbbeHochschuleJena\Eahstellenticket\Controller;
 
 use ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository;
 
+use Psr\Http\Message\ResponseInterface;
 //use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 //use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
@@ -42,21 +43,11 @@ class StellenticketController extends ActionController
     }
 
     /**
-     * Initializes the view before invoking an action method.
-     *
-     */
-    protected function initializeView($view)
-    {
-        $view->assign('contentObjectData', $this->configurationManager->getContentObject()->data);
-        //parent::initializeView($view);
-    }
-
-    /**
      * action list
      *
-     * @return void
+     * @return ResponseInterface
      */
-    public function listAction(): void
+    public function listAction(): ResponseInterface
     {
         if ($this->settings['showeahjprof'])
         {
@@ -76,5 +67,8 @@ class StellenticketController extends ActionController
         }
 
         $this->view->assign('offersdata', $offersdata);
+
+        return $this->htmlResponse();
+
     }
 }

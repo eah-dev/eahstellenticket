@@ -10,21 +10,21 @@
         <f:then>
             <f:if condition="{settings.themestyle.header.style} == 1">
                 <f:then>
-                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                    <div class="accordion" id="accordion-eahstellenticket">
                         <f:for each="{offersdata}" as="data" key="itemkey">
                             <f:render section="ItemAccordion" arguments="{_all}"/>
                         </f:for>
                     </div>
                 </f:then>
                 <f:else if="{settings.themestyle.header.style} == 2">
-                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                    <div class="accordion" id="accordion-eahstellenticket">
                         <f:for each="{offersdata}" as="data" key="itemkey">
                             <f:render section="ItemAccordion" arguments="{_all}"/>
                         </f:for>
                     </div>
                 </f:else>
                 <f:else>
-                    <div class="accordion" id="accordion-{contentObjectData.uid}">
+                    <div class="accordion" id="accordion-eahstellenticket">
                         <f:for each="{offersdata}" as="data" key="itemkey">
                             <f:render section="ItemAccordion" arguments="{_all}"/>
                         </f:for>
@@ -44,25 +44,25 @@
 
 <f:section name="ItemAccordion">
     <div class="accordion-item">
-        <div class="accordion-header" id="accordion-heading-{contentObjectData.uid}-{itemkey}">
+        <div class="accordion-header" id="accordion-heading-eahstellenticket-{itemkey}">
             <div class="accordion-title">
                 <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#accordion-{contentObjectData.uid}-{itemkey}"
+                    data-bs-target="#accordion-eahstellenticket-{itemkey}"
                     aria-expanded="{f:if(condition: '{activeElement} == {itemkey}', then: 'true', else: 'false')}"
-                    aria-controls="accordion-{contentObjectData.uid}-{itemkey}">
+                    aria-controls="accordion-eahstellenticket-{itemkey}">
                     <f:translate
                         key="LLL:EXT:eahstellenticket/Resources/Private/Language/locallang.xlf:{itemkey}.label" />
                 </button>
             </div>
         </div>
         <div
-            id="accordion-{contentObjectData.uid}-{itemkey}"
+            id="accordion-eahstellenticket-{itemkey}"
             class="accordion-collapse collapse{f:if(condition: '{activeElement} == {itemkey}', then: ' show')}"
-            aria-labelledby="accordion-heading-{contentObjectData.uid}-{itemkey}"
-            data-bs-parent="#accordion-{contentObjectData.uid}">
+            aria-labelledby="accordion-heading-eahstellenticket-{itemkey}"
+            data-bs-parent="#accordion-eahstellenticket">
             <div class="accordion-body">
                 <div class="accordion-content">
                     <div class="accordion-content-item accordion-content-text">
