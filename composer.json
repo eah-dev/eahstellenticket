@@ -20,9 +20,9 @@
     "issues": "https://github.com/eah-dev/eahstellenticket/issues",
     "source": "https://github.com/eah-dev/eahstellenticket"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "require": {
-    "typo3/cms-core": "^11.5 || ^12.4"
+    "typo3/cms-core": "^12 || ^13"
   },
   "autoload": {
     "psr-4": {

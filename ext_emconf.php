@@ -19,10 +19,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'carsten.hoelbing@eah-jena.de',
     'author_company' => 'Ernst-Abbe-Hochschule Jena',
     'state' => 'beta',
-    'version' => '1.0.2',
+    'version' => '1.0.3',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-12.4.99',
+            'typo3' => '12.4.0-13.4.99',
         ]
     ],
     'autoload' => [
