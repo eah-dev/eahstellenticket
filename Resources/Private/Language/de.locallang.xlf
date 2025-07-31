@@ -39,10 +39,10 @@
                 <target>Derzeit sind keine Stellen für Personal in Verwaltung und Technik ausgeschrieben.</target>
             </trans-unit>
             <trans-unit id="eahj_ausb.label">
-                <target>Ausbildungsplätze</target>
+                <target>Ausbildungs-/Praktikumsplätze</target>
             </trans-unit>
             <trans-unit id="eahj_ausb.no_entry_found.label">
-                <target>Derzeit sind keine Stellen für Ausbildungsplätze ausgeschrieben.</target>
+                <target>Derzeit sind keine Stellen für Ausbildungs-/Praktikumsplätze ausgeschrieben.</target>
             </trans-unit>
 		</body>
 	</file>
