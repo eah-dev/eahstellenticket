@@ -22,16 +22,34 @@
   },
   "version": "1.0.3",
   "require": {
-    "typo3/cms-core": "^12 || ^13"
+		"typo3/cms-core": "^12.4 || ^13.4"
+  },
+  "require-dev": {
+		"ssch/typo3-rector": "*"
   },
   "autoload": {
     "psr-4": {
       "ErnstAbbeHochschuleJena\\Eahstellenticket\\": "Classes"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "ErnstAbbeHochschuleJena\\Eahstellenticket\\Tests\\": "Tests"
+    }
+  },
   "extra": {
     "typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".build/public",
       "extension-key": "eahstellenticket"
+    }
+  },
+  "config": {
+		"vendor-dir": ".build/vendor",
+		"bin-dir": ".build/bin",
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
     }
   }
 }
