@@ -21,9 +21,6 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class StellenticketRepository extends Repository
 {
-    /**
-     * @return array
-     */
     public function getOffersFromPortalAsArray($url = null): array
     {
         $data = [];
@@ -38,7 +35,7 @@ class StellenticketRepository extends Repository
             ]
         ];
 
-        $context = stream_context_create($opts);
+        stream_context_create($opts);
 
         $stellenticketurl = [
             [
@@ -64,7 +61,7 @@ class StellenticketRepository extends Repository
             try {
                 $json = file_get_contents($item['url']);//, false, $context);
             } catch (Exception $e) {
-                $this->logger = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)->getLogger(__CLASS__);
+                $this->logger = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)->getLogger(self::class);
                 $this->logger->waring($e->getMessage());
             }
 
@@ -76,9 +73,6 @@ class StellenticketRepository extends Repository
         return $data;
     }
 
-    /**
-     * @return array
-     */
     public function getDatafromPortalURLAsArray($url = null): array
     {
         $data = [];
@@ -93,14 +87,14 @@ class StellenticketRepository extends Repository
             ]
         ];
 
-        $context = stream_context_create($opts);
+        stream_context_create($opts);
 
         // open file withe the opts HTTP-Headern
         try {
             $json = file_get_contents($url);//, false, $context);
-        } catch (Exception $e) {
-            $this->logger = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)->getLogger(__CLASS__);
-            $this->logger->waring($e->getMessage());
+        } catch (Exception $exception) {
+            $this->logger = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)->getLogger(self::class);
+            $this->logger->waring($exception->getMessage());
         }
 
         if ($json != '') {

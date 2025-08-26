@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3') or die();
+defined('TYPO3') || die();
 
 /***
  *
@@ -14,11 +14,11 @@ defined('TYPO3') or die();
 
 use ErnstAbbeHochschuleJena\Eahstellenticket\Controller\StellenticketController;
 
-$extension_key = 'eahstellenticket';
+$extensionKey = 'eahstellenticket';
 
 // Stellenticket
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    $extension_key,
+    $extensionKey,
     'jsontoelement',
     [
         StellenticketController::class => 'list',
@@ -26,5 +26,6 @@ $extension_key = 'eahstellenticket';
     // non-cacheable actions
     [
         StellenticketController::class => 'list'
-    ]
+    ],
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );

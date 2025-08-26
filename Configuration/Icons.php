@@ -9,11 +9,11 @@
  * (c) 2024 Carsten Hoelbing <carsten.hoelbing@eah-jena.de>, Ernst-Abbe-Hochschule Jena
  *
  */
-$extension_key = "jsontoelement";
+$extensionKey = "jsontoelement";
 
 return [
     'ext-jsontoelement-plugin' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        'source' => 'EXT:' . $extension_key . '/Resources/Public/Icons/Extension.svg'
+        'source' => 'EXT:' . $extensionKey . '/Resources/Public/Icons/Extension.svg'
     ]
 ];

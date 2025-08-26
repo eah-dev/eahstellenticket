@@ -25,27 +25,16 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class StellenticketController extends ActionController
 {
-    /**
-     * stellenticketRepository
-     *
-     * @var StellenticketRepository
-     */
-    protected $stellenticketRepository = null;
-
-    /**
-     * Inject a course repository to enable DI
-     *
-     * @param StellenticketRepository $stellenticketRepository
-     */
-    public function injectStellenticketRepository(StellenticketRepository $stellenticketRepository)
+    public function __construct(
+        /**
+         * stellenticketRepository
+         */
+        protected \ErnstAbbeHochschuleJena\Eahstellenticket\Domain\Repository\StellenticketRepository $stellenticketRepository
+    )
     {
-        $this->stellenticketRepository = $stellenticketRepository;
     }
-
     /**
      * action list
-     *
-     * @return ResponseInterface
      */
     public function listAction(): ResponseInterface
     {
@@ -53,14 +42,17 @@ class StellenticketController extends ActionController
         {
             $offersdata['eahj_prof'] = $this->stellenticketRepository->getDatafromPortalURLAsArray('https://stellenticket.eah-jena.de/de/html/eahj_offers?namespace=eahj_prof');
         }
+
         if ($this->settings['showeahjwiss'])
         {
             $offersdata['eahj_wiss'] = $this->stellenticketRepository->getDatafromPortalURLAsArray('https://stellenticket.eah-jena.de/de/html/eahj_offers?namespace=eahj_wiss');
         }
+
         if ($this->settings['showeahjverw'])
         {
             $offersdata['eahj_verwalt'] = $this->stellenticketRepository->getDatafromPortalURLAsArray('https://stellenticket.eah-jena.de/de/html/eahj_offers?namespace=eahj_verwalt');
         }
+
         if ($this->settings['showeahjausb'])
         {
             $offersdata['eahj_ausb'] = $this->stellenticketRepository->getDatafromPortalURLAsArray('https://stellenticket.eah-jena.de/de/html/eahj_offers?namespace=eahj_ausb');

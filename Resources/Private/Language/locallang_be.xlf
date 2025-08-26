@@ -10,7 +10,7 @@
 				<source>Stellenticket</source>
 			</trans-unit>
 
-			<trans-unit id="jsontoelement.title">
+			<trans-unit id="jsontoelement.name">
 				<source>Stellenticket</source>
 			</trans-unit>
 			<trans-unit id="jsontoelement.description">
