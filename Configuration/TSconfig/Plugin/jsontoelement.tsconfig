@@ -7,7 +7,7 @@ mod {
       elements {
         jsontoelement {
           iconIdentifier = ext-jsontoelement-plugin
-          title = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:jsontoelement.title
+          title = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:jsontoelement.name
           description = LLL:EXT:eahstellenticket/Resources/Private/Language/locallang_be.xlf:jsontoelement.description
           tt_content_defValues {
             CType = list
